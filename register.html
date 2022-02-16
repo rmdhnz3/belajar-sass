@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+  <link rel="stylesheet" type="text/css" href="style/form.css">
+   <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+<style>
+ ul li {
+  list-style-type: disc;
+  font-size: 30px;
+  position: relative;
+  margin-left: 15px; }
+ul li::after {
+  content: "";
+  position: absolute;
+  top: 0px; }
+ul li::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  border-left: 4px dashed black;
+  width: 4px;
+  height: 100%; }
+ul li:first-child:before {
+  top: 20px; }
+ul li:last-child:before {
+  top: -20px; }
+</style>
+</head>
+<body style="background-color:#56BAEC;">
+  <div class="wrapper">
+  <div id="formContent">
+    <img src="img/nightmare.png" width="50%" weight="50%">
+    <div>
+      <h3>Form Pendaftaran</h3>
+    </div>
+    <form action="#" method="post">
+      <ul>
+        <li><strong><p style="font-size:20px;">Masukkan Username</strong></p>
+      <input type="text" id="login"  name="username" placeholder="Username" style="margin-left:-20px;"></li>
+        <li><strong><p style="font-size:20px;">Masukkan Password</strong></p>
+      <input type="text" id="password"  name="pass1" placeholder="Password" style="margin-left:-20px;"></li>
+      <li><strong><p style="font-size:20px;">Masukkan Ulang Password</strong></li></p>
+      <input type="text" id="password"  name="pass2" placeholder="Ulangi Password">
+    </ul>
+      <input type="submit" value="Daftar" style="color: black;font-size: 15px;">
+    </form>
+    <div id="formFooter">
+      <p>Sudah punya akun ?&nbsp;&nbsp;<a class="underlineHover" href="login.html">Log In</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
